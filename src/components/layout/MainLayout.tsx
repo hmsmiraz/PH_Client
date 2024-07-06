@@ -1,38 +1,46 @@
-import {
-  UploadOutlined,
-  UserOutlined,
-  VideoCameraOutlined,
-} from "@ant-design/icons";
-import { Layout, Menu, MenuProps, theme } from "antd";
-import { createElement } from "react";
-import { Outlet} from 'react-router-dom'
+import { Layout, Menu, MenuProps } from "antd";
+import { NavLink, Outlet } from "react-router-dom";
 
 const { Header, Content, Footer, Sider } = Layout;
 
-const items: MenuProps['items'] = [
+const items: MenuProps["items"] = [
   {
-    key: '1',
-    label: 'Home'
+    key: "Dashboard",
+    label: <NavLink to="/admin/dashboard">Dashboard</NavLink>,
   },
   {
-    key: '2',
-    label: 'About'
-  },
-  {
-    key: '3',
-    label: 'Contact Us',
-    children:[
+    key: "User Management",
+    label: "User Management",
+    children: [
       {
-        key: '11',
-        label: 'BD'
+        key: "Create Admin",
+        label: <NavLink to="/admin/create-admin">Create Admin</NavLink>,
       },
       {
-        key: '12',
-        label: 'UK'
+        key: "Create Faculty",
+        label: <NavLink to="/admin/create-faculty">Create Faculty</NavLink>,
       },
-    ]
+      {
+        key: "Create Student",
+        label: <NavLink to="/admin/create-student">Create Student</NavLink>,
+      },
+    ],
   },
-]
+  {
+    key: "3",
+    label: "Contact Us",
+    children: [
+      {
+        key: "11",
+        label: "BD",
+      },
+      {
+        key: "12",
+        label: "UK",
+      },
+    ],
+  },
+];
 
 const MainLayout = () => {
   return (
