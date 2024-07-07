@@ -1,5 +1,6 @@
-import SemesterRegistration from "../pages/Student/semesterRegistration";
-import StudentDashboard from "../pages/Student/studentDashboard";
+import SemesterRegistration from "../pages/Student/SemesterRegistration";
+import StudentDashboard from "../pages/Student/StudentDashboard";
+
 
 export const studentPaths = [
   {

@@ -1,7 +1,9 @@
-import AdminDashboard from "../pages/Admin/adminDashboard";
-import CreateAdmin from "../pages/Admin/createAdmin";
-import CreateFaculty from "../pages/Admin/createFaculty";
-import CreateStudent from "../pages/Admin/createStudent";
+import AdminDashboard from "../pages/Admin/AdminDashboard";
+import CreateAdmin from "../pages/Admin/CreateAdmin";
+import CreateFaculty from "../pages/Admin/CreateFaculty";
+import CreateStudent from "../pages/Admin/CreateStudent";
+
+
 
 export const adminPaths = [
   {
