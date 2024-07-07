@@ -1,4 +1,4 @@
-const createAdmin = () => {
+const CreateAdmin = () => {
   return (
     <div>
       <h1>Hello, createAdmin!</h1>
@@ -6,4 +6,4 @@ const createAdmin = () => {
   );
 };
 
-export default createAdmin;
+export default CreateAdmin;
