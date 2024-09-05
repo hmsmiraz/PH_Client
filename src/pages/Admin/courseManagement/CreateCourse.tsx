@@ -35,7 +35,7 @@ const CreateCourse = () => {
         : [],
     };
 
-    console.log(courseData);
+    // console.log(courseData);
 
     try {
       const res = (await createCourse(courseData)) as TResponse<any>;
@@ -43,7 +43,7 @@ const CreateCourse = () => {
       if (res.error) {
         toast.error(res.error.data.message, { id: toastId });
       } else {
-        toast.success('Semester created', { id: toastId });
+        toast.success('Course created', { id: toastId });
       }
     } catch (err) {
       toast.error('Something went wrong', { id: toastId });
